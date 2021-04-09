@@ -2,7 +2,8 @@
  A simple python script to convert image to greyscale or binary
  example:
 
-(for future image processing) <br>
+(for future image processing)
+
 32 32 0 1<br>
 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 <br>
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 <br>
@@ -36,8 +37,6 @@
 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 <br>
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 <br>
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 <br>
-
-OR
 
 To run:<br>
 python3 img2txt.py <input_image_filename_or_path> <threshold_value> <flag:to_convert_to_binary> <flag:to_pretty_print><br>
