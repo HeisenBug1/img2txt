@@ -2,7 +2,7 @@
  A simple python script to convert image to greyscale or binary
  example:
 
-(for future image processing)
+(useful for future image processing)
 
 32 32 0 1<br>
 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 <br>
