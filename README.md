@@ -39,7 +39,8 @@
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 <br>
 
 To run:<br>
-python3 img2txt.py <input_image_filename_or_path> <threshold_value> <flag:to_convert_to_binary> <flag:to_pretty_print><br>
+python3 img2txt.py <input_image_filename_or_path> <threshold_value> <flag_to_convert_to_binary> <flag_to_pretty_print>
+
 eg 1: python3 img2txt.py /home/Desktop/img2.png 240 -b -p<br>
 eg 2: python3 img2txt.py img2.png 255 -p (here 255 is max threshold, meaning no pixel value will be replaced with 0)<br>
 eg 3: python3 img2txt.py img2.png 250
