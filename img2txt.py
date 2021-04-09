@@ -1,9 +1,12 @@
-# convert and image to text to use with our CSCI-381 (Computer Vision) projects
+# Author M.R.H
+# this may not be the most effecient way to do this,
+# but i needed a way to get these text images for a class
 
 import sys
 from PIL import Image
 import numpy as np
 
+# minimum arguments required to convert an image
 if(len(sys.argv) < 3):
 	print("Need arguments:\n1) image file\n2) threshold\nAnd optional binary flag and/or pretty flag")
 	print("eg: python3 image1.jpg 200 [ -b -p (optional) ]")
@@ -12,7 +15,7 @@ if(len(sys.argv) < 3):
 binary = False
 pretty = False
 threshold = int(sys.argv[2])
-img = Image.open(sys.argv[1]).convert('L')
+img = Image.open(sys.argv[1]).convert('L')	# convert image to greyscale
 col, row = img.size
 
 if(len(sys.argv) == 5):
@@ -24,6 +27,7 @@ else:
 	if(sys.argv[3] == "-p"):
 		pretty = True
 
+# convert PIL.image to 2D np.array or greyscale values
 x = np.asarray(img.getdata(), dtype=np.int).reshape((img.size[1], img.size[0]))
 
 minVal = 0
@@ -64,7 +68,10 @@ for i in range(row):
 
 	st += "\n"
 
+# image header (row, col, min_val_in_img, max_val_in_img)
 f.write(str(row) +" "+ str(col) +" "+ str(minVal) +" "+ str(maxVal))
+
+# write processed data to file
 f.write("\n"+st)
 
 f.close()
