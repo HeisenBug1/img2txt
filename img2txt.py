@@ -57,7 +57,7 @@ for i in range(row):
 					st += "1 "
 				else:
 					if pretty:
-						st += ". "
+						st += "· "
 					else:
 						st += "0 "
 		else:
