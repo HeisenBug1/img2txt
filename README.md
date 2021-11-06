@@ -1,6 +1,6 @@
 
 # image to text
- A simple python script to convert image to greyscale or binary (useful for further image processing)
+ A simple python script to convert image to text (grey scale or binary.. useful for further image processing)
 
 ## Example:
 Here is a scaled down (32x32) image of a star:
